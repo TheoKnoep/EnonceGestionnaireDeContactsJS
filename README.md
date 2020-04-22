@@ -61,3 +61,20 @@ Réalisez donc ce menu et faites en sorte que lorsque l'utilisateur choisisse l'
 Créez maintenant la méthode qui nous permettra de lister les contacts que nous avons passé en paramètre à notre gestionnaire de contacts.
 
 La liste des contacts d'affichera dans la console. Une fois la liste affichée, le menu du programme réaparait. 
+
+## 8 - Gestionnaire de contacts : Ajouter un contact
+
+Maintenant créez la méthode qui nous permettra via un prompte simple d'ajouter un contact en ajoutant simplement son nom et son email. 
+Attention il est important que le nom vérifie la condition minimale des 2 lettres et que l'email soit bien au format email. 
+
+Bonus : Si l'email existe déjà, on a un message qui nous informe que l'email est déjà associé à un autre contact.
+
+## 9 - Gestionnaire de contacts : Supprimer un contact 
+
+Créez maintenant la possibilité de supprimer un contact de la liste. Libre à vous de choisir comment supprimer le contact,
+par contre il faut s'assurer que l'on ne supprime toujours qu'un contact à la fois. 
+
+## 10 - Gestionnaire de contacts : Modifier un contact
+
+Maintenant nous désirons pouvoir changer les informations d'un contact. On doit pouvoir modifier, le nom, le prénom où l'email. 
+
