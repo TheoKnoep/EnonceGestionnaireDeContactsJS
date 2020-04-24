@@ -78,3 +78,6 @@ par contre il faut s'assurer que l'on ne supprime toujours qu'un contact à la f
 
 Maintenant nous désirons pouvoir changer les informations d'un contact. On doit pouvoir modifier, le nom, le prénom où l'email. 
 
+## 11 - Création d'une interface Graphique
+
+En vous basant sur le design AdobeXD proposé ici, implémentez l'interface graphique
