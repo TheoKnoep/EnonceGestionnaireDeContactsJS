@@ -14,9 +14,11 @@ La première étape de cet exercice sera de créer une classe Contact avec les c
     * Un Prénom
     * Un email
 
+Nous créérons la classe contact dans le fichier contact.js
+
 Une fois la classe créée, nous pouvons générer un ou plusieurs contacts basés sur ce modèle dans le fichier *main.js* du projet. ( nous l'appelerons par la suite "le main" )
 
-Dans le main générer un contact en y définissant uniquement son nom. Le nom sera appliqué par le *constructor* les autres caractéristiques seront initialisées par défaut.
+Dans le main générer un contact en y définissant uniquement son nom. Le nom sera appliqué par le *constructor* les autres caractéristiques peuvent être initialisées par défaut.
 
 ## 2 - Plusieurs contacts
 
@@ -26,11 +28,13 @@ Ajoutez un second contact dans le main et donnez-lui un nom différent pour pouv
 
 ## 3 - Fiche d'information du Contact
 
-Créer une méthode que l'on appellera *displayInfo()*. Cette méthode affiche le détail d'un contact :
+Dans la classe contact, créer une méthode que l'on appellera *displayInfo()*. Cette méthode affiche le détail d'un contact :
 
 *"Nom : Antonio || Prénom: Aurélien || email: contact@aurelienantonio.com"*
 
-Une fois la méthode créée, retournez dans le main et demandez à chaque contact d'afficher ses informations
+Une fois la méthode créée, retournez dans le main et demandez à chaque contact d'afficher ses informations en appelant : 
+monContact.displayInfo()
+*remplacer monContact par le nom de vos propres variables*
 
 ## 4 - Vérification simple des données
 
