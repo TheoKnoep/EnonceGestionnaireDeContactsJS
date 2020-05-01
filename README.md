@@ -80,4 +80,7 @@ Maintenant nous désirons pouvoir changer les informations d'un contact. On doit
 
 ## 11 - Création d'une interface Graphique
 
-En vous basant sur le design AdobeXD proposé ici, implémentez l'interface graphique
+En vous basant sur le design AdobeXD proposé ici, implémentez l'interface graphique.
+
+## 12 - Persister les donnée localement
+
