@@ -82,7 +82,7 @@ par contre il faut s'assurer que l'on ne supprime toujours qu'un contact à la f
 
 Maintenant nous désirons pouvoir changer les informations d'un contact. On doit pouvoir modifier, le nom, le prénom où l'email. 
 
-## 11 - Persister les donnée localement
+## 11 - Persister les données localement
 
 Lorsque l'on ajoute, modifie ou supprime un contact, faire en sorte que la liste des contacts soit sauvegardée dans le localStorage. 
 
