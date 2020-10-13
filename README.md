@@ -1,6 +1,6 @@
 # Exercice POO Javascript : Gestionnaire de contact
 
-Dans cet exercice nous allons réaliser un gestionnaire de contacts. L'idée est dans un premier temps de réaliser quelque chose qui fonctionnera dans la console de notre navigateur. Puis nous travaillerons directement dans notre page web avec le DOM. Finalement nous travaillerons ave une API afin de sauvegarder à distance nos contacts.
+Dans cet exercice nous allons réaliser un gestionnaire de contacts. L'idée est dans un premier temps de réaliser quelque chose qui fonctionnera dans la console de notre navigateur. Puis nous travaillerons directement dans notre page web avec le DOM. Finalement nous travaillerons avec une API afin de sauvegarder à distance nos contacts.
 
 Le point d'entrée de notre application se fera dans un fichier que vous appelerez main.js
 
