@@ -1,0 +1,19 @@
+{
+  "name": "enoncegestionnairedecontactsjs",
+  "version": "1.0.0",
+  "description": "utilitaire de gestion de contact pour s'exercer à manipuler le javascript",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheoKnoep/EnonceGestionnaireDeContactsJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheoKnoep/EnonceGestionnaireDeContactsJS/issues"
+  },
+  "homepage": "https://github.com/TheoKnoep/EnonceGestionnaireDeContactsJS#readme"
+}
