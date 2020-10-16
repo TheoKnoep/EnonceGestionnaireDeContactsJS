@@ -10,5 +10,13 @@ class Contact {
 	}
 }; 
 
+// Fonction pour vérifier la longueur du nom : 
+const checkStringLength = (mot) => {
+	if (mot.length >= 2) {
+		return true; 
+	} else {
+		return false; 
+	}
+}
 
 

@@ -48,7 +48,7 @@ Maintenant que nous avons vérifié les données du nom et du prénom, créez un
 
 ## 6 - Mise en place du gestionnaire de contacts. 
 
-Mainteant que nous avons pris soin de notre contact, les données sont vérifiées, formatées. Nous voulons pouvoir de manière dynamique gérer nos contacts via un mini programme. 
+Maintenant que nous avons pris soin de notre contact, les données sont vérifiées, formatées. Nous voulons pouvoir de manière dynamique gérer nos contacts via un mini programme. 
 
 Créez la classe ContactManager. Cette classe gèrera une liste de contacts. On pourra, au lancement de l'application charger une liste de contacts. Créez une première méthode *displayMenu()* qui affichera dans une boite de dialogue un menu avec les options suivantes : 
 
