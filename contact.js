@@ -5,7 +5,10 @@ class Contact {
 		this.email = ""; 
 	}
 	displayInfos() {
-		console.log("Nom : " + this.nom + " || Prénom : " + this.prenom + " || Email : " + this.email); 
+		let displayContact = document.getElementById("display-contact"); 
+		displayContact.textContent = "Nom : " + this.nom + " || Prénom : " + this.prenom + " || Email : " + this.email; 
 	}
 }; 
+
+
 
