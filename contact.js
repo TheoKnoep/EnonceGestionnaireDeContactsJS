@@ -21,11 +21,7 @@ const checkStringLength = (mot) => {
 
 
 //Fonction pour vérifier le format d'email 
-const checkEmailFormat = (adresse) => {
-	if () {
-		return true; 
-	} else {
-		return false; 
-	}
-}
+const isEmailValid = (adresse) => {
+	return /^[a-zA-Z0-9]+@[a-zA-Z-]+\.[a-zA-Z]{2,6}$/.test(adresse);
+}; 
 
