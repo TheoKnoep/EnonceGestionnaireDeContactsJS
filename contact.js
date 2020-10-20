@@ -10,7 +10,7 @@ class Contact {
 	}
 }; 
 
-// Fonction pour vérifier la longueur du nom : 
+//Fonction pour vérifier la longueur du nom : 
 const checkStringLength = (mot) => {
 	if (mot.length >= 2) {
 		return true; 
@@ -19,4 +19,13 @@ const checkStringLength = (mot) => {
 	}
 }
 
+
+//Fonction pour vérifier le format d'email 
+const checkEmailFormat = (adresse) => {
+	if () {
+		return true; 
+	} else {
+		return false; 
+	}
+}
 
