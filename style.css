@@ -13,6 +13,30 @@
   width: 320px;
 }
 
+.contact-manager-menu {
+  cursor: pointer;
+}
+.contact-manager-menu li {
+  color: black;
+}
+.contact-manager-menu li:hover {
+  color: blue;
+  transition: color ease 360ms;
+}
+.contact-manager-menu li:active {
+  outline: blue 1px solid;
+}
+
+.info-message {
+  color: green;
+  background-color: #edffd4;
+  padding: 30px 2em 1em 2em;
+  margin: -20px auto;
+  border-radius: 0 0 28px 28px;
+  width: 400px;
+  text-align: center;
+}
+
 /* Layout */
 .contacts-container {
   display: flex;

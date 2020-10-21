@@ -64,7 +64,7 @@ Réalisez donc ce menu et faites en sorte que lorsque l'utilisateur choisisse l'
 
 Créez maintenant la méthode qui nous permettra de lister les contacts que nous avons passé en paramètre à notre gestionnaire de contacts.
 
-La liste des contacts d'affichera dans la console. Une fois la liste affichée, le menu du programme réaparait. 
+La liste des contacts s'affichera dans la console. Une fois la liste affichée, le menu du programme réapparaît. 
 
 ## 8 - Gestionnaire de contacts : Ajouter un contact
 
