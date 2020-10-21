@@ -2,7 +2,7 @@
 
 Dans cet exercice nous allons réaliser un gestionnaire de contacts. L'idée est dans un premier temps de réaliser quelque chose qui fonctionnera dans la console de notre navigateur. Puis nous travaillerons directement dans notre page web avec le DOM. Finalement nous travaillerons avec une API afin de sauvegarder à distance nos contacts.
 
-Le point d'entrée de notre application se fera dans un fichier que vous appelerez main.js
+Le point d'entrée de notre application se fera dans un fichier que vous appellerez `main.js`
 
 Je vous invite à faire un Fork de ce repo et réaliser un commit à chaque étape réalisée. 
 
@@ -14,9 +14,9 @@ La première étape de cet exercice sera de créer une classe Contact avec les c
     * Un Prénom
     * Un email
 
-Nous créérons la classe contact dans le fichier contact.js
+Nous créerons la classe contact dans le fichier `contact.js`
 
-Une fois la classe créée, nous pouvons générer un ou plusieurs contacts basés sur ce modèle dans le fichier *main.js* du projet. ( nous l'appelerons par la suite "le main" )
+Une fois la classe créée, nous pouvons générer un ou plusieurs contacts basés sur ce modèle dans le fichier *main.js* du projet. ( nous appellerons par la suite "le main" )
 
 Dans le main générer un contact en y définissant uniquement son nom. Le nom sera appliqué par le *constructor* les autres caractéristiques peuvent être initialisées par défaut.
 
@@ -50,7 +50,7 @@ Maintenant que nous avons vérifié les données du nom et du prénom, créez un
 
 Maintenant que nous avons pris soin de notre contact, les données sont vérifiées, formatées. Nous voulons pouvoir de manière dynamique gérer nos contacts via un mini programme. 
 
-Créez la classe ContactManager. Cette classe gèrera une liste de contacts. On pourra, au lancement de l'application charger une liste de contacts. Créez une première méthode *displayMenu()* qui affichera dans une boite de dialogue un menu avec les options suivantes : 
+Créez la classe ContactManager. Cette classe gérera une liste de contacts. On pourra, au lancement de l'application charger une liste de contacts. Créez une première méthode *displayMenu()* qui affichera dans une boîte de dialogue un menu avec les options suivantes : 
 
     * 1 - Lister les contacts
     * 2 - Ajouter un nouveau contact
