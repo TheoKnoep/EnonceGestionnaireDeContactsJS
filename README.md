@@ -68,7 +68,7 @@ La liste des contacts s'affichera dans la console. Une fois la liste affichée, 
 
 ## 8 - Gestionnaire de contacts : Ajouter un contact
 
-Maintenant créez la méthode qui nous permettra via un prompte simple d'ajouter un contact en ajoutant simplement son nom et son email. 
+Maintenant créez la méthode qui nous permettra via un prompt simple d'ajouter un contact en ajoutant simplement son nom et son email. 
 Attention il est important que le nom vérifie la condition minimale des 2 lettres et que l'email soit bien au format email. 
 
 Bonus : Si l'email existe déjà, on a un message qui nous informe que l'email est déjà associé à un autre contact.
