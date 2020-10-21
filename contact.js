@@ -5,12 +5,16 @@ class Contact {
 		this.email = ""; 
 	}
 	displayInfos() { 
-		alert("Nom : " + this.nom + " || Prénom : " + this.prenom + " || Email : " + this.email); 
+		console.log("Nom : " + this.nom + " || Prénom : " + this.prenom + " || Email : " + this.email); 
 	}
 }; 
 
 
 class ContactManager {
+	constructor (contactsList) {
+		this.contactsList = contactsList; 
+	}
+
 	displayMenu() {
 		let actionChoice = document.getElementById("action-choice"); 
 		actionChoice.innerHTML = '<ul class="contact-manager-menu"><li id="list-contacts">Lister les contacts</li><li id="add-contact">Ajouter un nouveau contact</li><li id="modify-contact">Modifier un contact existant</li><li id="delate-contact">Supprimer un contact</li><li id="quit-contact-manager">Quitter le gestionnaire de contact</li>'; 
@@ -25,5 +29,12 @@ class ContactManager {
 			}
 		}); 
 	}; 
+
+	listContacts() {
+		//méthode qui permet de lister les contacts 
+		for (let i in this.contactsList) {
+			displayInfos(this.contactsList[i]); 
+		}
+	}
 }; 
 
