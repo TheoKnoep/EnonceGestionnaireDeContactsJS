@@ -9,5 +9,5 @@ const checkStringLength = (mot, nombre) => {
 
 //Fonction pour vérifier le format d'email 
 const emailIsValid = (adresse) => {
-	return /^[a-zA-Z0-9]+@[a-zA-Z-]+\.[a-zA-Z]{2,6}$/.test(adresse);
+	return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(adresse);
 }; 
