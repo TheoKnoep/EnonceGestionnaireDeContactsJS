@@ -37,26 +37,17 @@ for (let i in tableContacts) {
 
 
 
+console.log(tableContacts[0]); 
+
 
 //appel à la méthode du tableau : 
-let manager = new ContactManager; 
+let manager = new ContactsManager(); 
+
+
+//on appelle le menu du manager : 
+manager.displayMenu(); 
 
 
 
-let action = manager.displayMenu(); 
 
-	switch (action) {
-		case '1': 
-			manager.toListContacts(); 
-			manager.displayMenu(); 
-			break; 
-		case '2': 
-			manager.addContact(); 
-			manager.displayMenu(); 
-			break; 
-		case '5':
-			break;
-		default:
-			console.log('Valeur inconnue reçue');
-	}
 

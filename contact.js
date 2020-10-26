@@ -10,7 +10,8 @@ class Contact {
 	}
     }
 
-    class ContactManager {
+    class ContactsManager {
+
 	displayMenu() {
 		//afficher dans une boîte de dialogue un menu avec les options du gestionnaire de contact (??) 
 		console.log('Le menu s\'affiche'); 
@@ -24,9 +25,13 @@ class Contact {
 		switch (userChoice) {
 			case '1':
 				console.log('Vous avez choisi : Lister les contacts'); 
+				this.toListContacts(); 
+				this.displayMenu(); 
 				break; 
 			case '2': 
 				console.log('Vous avez choisi : Ajouter un nouveau contact'); 
+				this.addContact(); 
+				this.displayMenu(); 
 				break; 
 			case '3': 
 				console.log('Vous avez choisi : Modifier un contact existant'); 
@@ -36,10 +41,8 @@ class Contact {
 				break; 
 			case '5': 
 				console.log('Vous avez choisi : Quitter le gestionnaire de contacts'); 
+				console.log("C'est bon c'est quitté 👋"); 
 				break; 
-		}
-		if (userChoice === "5") {
-			console.log("C'est bon c'est quitté 👋"); 
 		}
 		return userChoice; 
 	}
