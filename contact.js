@@ -56,18 +56,33 @@ class Contact {
 	 }
 
 	addContact() {
-		    let newPrenom = prompt("Renseignez le prénom du nouveau contact"); 
-		    while (!checkStringLength(newPrenom, 2)) {
-			newPrenom = prompt("Veuillez saisir un prénom d'au mois deux lettres"); 
-			}; 
-		    let newContact = new Contact(newPrenom); 
-		    newContact.email = prompt("Renseignez l'adresse email du nouveau contact"); 
-		    while(!emailIsValid(newContact.email)) {
-			    newContact.email = prompt("Veuillez saisir une adresse email valide"); 
-		    }
-		    tableContacts.push(newContact); 
-		    console.log("Le contact a bien été ajouté");  //feedback utilisateur : confirmation de l'ajout
-		    newContact.displayInfos(); 
+			let newPrenom = prompt("Renseignez le prénom du nouveau contact"); 
+			while (!checkStringLength(newPrenom, 2)) {
+				newPrenom = prompt("Veuillez saisir un prénom d'au mois deux lettres"); 
+				}; 
+			let newContact = new Contact(newPrenom); 
+			newContact.email = prompt("Renseignez l'adresse email du nouveau contact"); 
+			while(!emailIsValid(newContact.email)) {
+				newContact.email = prompt("Veuillez saisir une adresse email valide"); 
+			}
+
+			//feature vérification doublon email : 
+			let listeEmails = []; 
+			for (let i in tableContacts) {
+				listeEmails.push(tableContacts[i].email); 
+			}
+			if (listeEmails.indexOf(newContact.email) != -1) {
+				let doublon = tableContacts[listeEmails.indexOf(newContact.email)].prenom; 
+				alert(`⚠️ L\'adresse email saisie correspond déjà à celle de ${doublon}`); 
+			}
+
+			//ajout du nouveau contact créé à la liste : 
+			tableContacts.push(newContact); 
+			console.log("Le contact a bien été ajouté");  //feedback utilisateur : confirmation de l'ajout
+			newContact.displayInfos(); 
+
+		    
+
 	}
 }
 
