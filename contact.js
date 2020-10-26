@@ -35,9 +35,12 @@ class Contact {
 				break; 
 			case '3': 
 				console.log('Vous avez choisi : Modifier un contact existant'); 
+				this.delateContact(); 
+				this.displayMenu(); 
 				break; 
 			case '4': 
 				console.log('Vous avez choisi : Supprimer un contact'); 
+				this.displayMenu(); 
 				break; 
 			case '5': 
 				console.log('Vous avez choisi : Quitter le gestionnaire de contacts'); 
@@ -83,6 +86,16 @@ class Contact {
 
 		    
 
+	}
+
+	delateContact() {
+		for (let i in tableContacts) {
+			console.log(`${i} - ${tableContacts[i].prenom}`); 
+		}
+		let contactToDelate = prompt('Merci de sélectionner le numéro du contact à supprimer (cf liste dans la console) :'); 
+		
+		tableContacts.splice(contactToDelate, 1); 
+		console.log(`Le contact a été supprimé, adieu`); 
 	}
 }
 
