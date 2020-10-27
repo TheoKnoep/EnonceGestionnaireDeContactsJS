@@ -11,8 +11,8 @@ class Contact {
     }
 
 class ContactsManager {
-	constructor(liste) {
-		this.liste = liste; 
+	constructor() {
+		this.liste = localStorage.getItem('contacts') ? JSON.parse(localStorage.getItem('contacts')) : []; 
 	}
 
 	displayMenu() {
@@ -47,6 +47,7 @@ class ContactsManager {
 					this.delateContact(); 
 					break; 
 			}
+			localStorage.setItem('contacts', JSON.stringify(this.liste));
 			this.displayMenu(); 
 			userChoice = ''; //on réinitialise le choix pour la prochaine boucle du menu
 		}
@@ -117,7 +118,7 @@ class ContactsManager {
 		console.log(infoToModify); 
 		console.log(this.liste[contactToModify]); 
 		console.log(this.liste[contactToModify].email); 
-		switch (infoToModify) {
+		/* switch (infoToModify) {
 			case 'prenom': 
 				this.liste[contactToModify].prenom = prompt(`Renseignez le nouveau prénom :`);
 				break;
@@ -127,7 +128,8 @@ class ContactsManager {
 			case 'email': 
 				this.liste[contactToModify].email = prompt('Renseignez le nouvel email : '); 
 				break; 
-		}
+		} */
+		this.liste[contactToModify][infoToModify] = prompt('Nouvelle valeur : '); 
 		console.log('Le contact a bien été modifié'); 
 	}
 }
