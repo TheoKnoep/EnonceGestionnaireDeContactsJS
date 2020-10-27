@@ -66,6 +66,10 @@ class ContactsManager {
 			newPrenom = prompt("Veuillez saisir un prénom d'au mois deux lettres"); 
 			}; 
 		let newContact = new Contact(newPrenom); 
+		newContact.nom = prompt("Renseignez le nom du nouveau contact"); 
+		while (!checkStringLength(newPrenom, 2)) {
+			newContact.nom = prompt("Veuillez saisir un nom d'au mois deux lettres"); 
+			}; 
 		newContact.email = prompt("Renseignez l'adresse email du nouveau contact"); 
 		while(!emailIsValid(newContact.email)) {
 			newContact.email = prompt("Veuillez saisir une adresse email valide"); 
