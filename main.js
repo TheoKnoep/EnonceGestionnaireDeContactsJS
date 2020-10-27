@@ -37,12 +37,8 @@ for (let i in tableContacts) {
 
 
 
-console.log(tableContacts[0]); 
-
-
 //appel à la méthode du tableau : 
-let manager = new ContactsManager(); 
-
+let manager = new ContactsManager(tableContacts); 
 
 //on appelle le menu du manager : 
 manager.displayMenu(); 
