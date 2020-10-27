@@ -36,15 +36,31 @@ for (let i in tableContacts) {
 
 
 
+console.log(localStorage); 
+
+
+
+
+
+
+//on stocke le contenu de manager.liste dans le local storae avec stringify (??) 
+localStorage.setItem('contacts', JSON.stringify(tableContacts)); 
+console.log(localStorage); 
+
+let contactsEnMemoire = JSON.parse(localStorage.getItem('contacts')); 
+console.log(tableContacts); 
+console.log(contactsEnMemoire); 
 
 //appel à la méthode du tableau en lui passant comme paramètre le tableau des contacts de départ : 
-let manager = new ContactsManager(tableContacts); 
+let manager = new ContactsManager(contactsEnMemoire); 
+
+console.log(manager.list); 
+
 
 //on appelle le menu du manager : 
-manager.displayMenu(); 
+//manager.displayMenu(); 
 
 
-console.log(manager.liste); 
 
 
 
