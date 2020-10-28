@@ -16,48 +16,50 @@ class ContactsManager {
 	}
 
 	displayMenu() {
-		//afficher dans une boîte de dialogue un menu avec les options du gestionnaire de contact (??) 
 		console.log('Le menu s\'affiche'); 
 		let userChoice = prompt("Veuillez saisir le nombre de l'action à exécuter : \n 1 - Lister les contacts \n 2 - Ajouter un nouveau contact \n 3 - Modifier un contact existant \n 4 - Supprimer un contact \n 5 - Quitter le gestionnaire de contacts");
-		//on vérifie le format saisi :
-		let responsesAcceptees = ["1", "2", "3", "4", "5"]; 
-		while (responsesAcceptees.indexOf(userChoice) === -1 ) {
-			userChoice = prompt("Veuillez saisir un nombre valide svp :  \n 1 - Lister les contacts \n 2 - Ajouter un nouveau contact \n 3 - Modifier un contact existant \n 4 - Supprimer un contact \n 5 - Quitter le gestionnaire de contacts");
-		}
 		//feedback : 
-		if (userChoice == '5') {
-			console.log('Vous avez choisi : Quitter le gestionnaire de contacts'); 
-			console.log("C'est bon c'est quitté 👋"); 
-		} else {
-			switch (userChoice) {
-				case '1':
-					console.log('Vous avez choisi : Lister les contacts'); 
-					this.toListContacts(); 
-					break; 
-				case '2': 
-					console.log('Vous avez choisi : Ajouter un nouveau contact'); 
-					this.addContact(); 
-					break; 
-				case '3': 
-					console.log('Vous avez choisi : Modifier un contact existant'); 
-					this.modifyContact(); 
-					break; 
-				case '4': 
-					console.log('Vous avez choisi : Supprimer un contact'); 
-					this.delateContact(); 
-					break; 
-			}
-			localStorage.setItem('contacts', JSON.stringify(this.liste));
-			this.displayMenu(); 
-			userChoice = ''; //on réinitialise le choix pour la prochaine boucle du menu
+		switch (userChoice) {
+			case '1':
+				console.log('Vous avez choisi : Lister les contacts'); 
+				this.toListContacts(); 
+				this.displayMenu(); 
+				break; 
+			case '2': 
+				console.log('Vous avez choisi : Ajouter un nouveau contact'); 
+				this.addContact(); 
+				this.displayMenu(); 
+				break; 
+			case '3': 
+				console.log('Vous avez choisi : Modifier un contact existant'); 
+				this.modifyContact(); 
+				this.displayMenu(); 
+				break; 
+			case '4': 
+				console.log('Vous avez choisi : Supprimer un contact'); 
+				this.delateContact(); 
+				this.displayMenu(); 
+				break; 
+			case '5': 
+				console.log('Vous avez choisi : Quitter le gestionnaire de contacts'); 
+				console.log("C'est bon c'est quitté 👋"); 
+				break; 
+			default: 
+				console.log('Veuillez choisir un nombre valide svp'); 
+				this.displayMenu(); 
 		}
+		localStorage.setItem('contacts', JSON.stringify(this.liste)); //on enregistre les changements apportés dans le localStorage
+		userChoice = ''; //on réinitialise le choix pour la prochaine boucle du menu
 
 	}
 
 	toListContacts() {
-		//méthode qui permet de lister les contacts dans la console (??)
-		for (let i in this.liste) {
-			this.liste[i].displayInfos(); 
+		if (this.liste.length == 0) {
+			console.log('Auncun contact pour le moment'); 
+		} else {
+			for (let i in this.liste) {
+				console.log("Prénom : "+this.liste[i].prenom +" || Nom : "+ this.liste[i].nom + " || Email : "+this.liste[i].email); 
+			}
 		}
 	 }
 
@@ -118,17 +120,6 @@ class ContactsManager {
 		console.log(infoToModify); 
 		console.log(this.liste[contactToModify]); 
 		console.log(this.liste[contactToModify].email); 
-		/* switch (infoToModify) {
-			case 'prenom': 
-				this.liste[contactToModify].prenom = prompt(`Renseignez le nouveau prénom :`);
-				break;
-			case 'nom': 
-				this.liste[contactToModify].nom = prompt(`Renseignez le nouveau nom :`);
-				break;
-			case 'email': 
-				this.liste[contactToModify].email = prompt('Renseignez le nouvel email : '); 
-				break; 
-		} */
 		this.liste[contactToModify][infoToModify] = prompt('Nouvelle valeur : '); 
 		console.log('Le contact a bien été modifié'); 
 	}
