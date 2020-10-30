@@ -9,12 +9,34 @@
 
 	
 </head>
-<body id="full-page">
-	<h1>Gestionnaire de contacts</h1>
+<body>
+	<header class="header">
+		<h1>Gestionnaire de contacts</h1>
+	</header>
 
-	<div id="action-choice"></div>
+	<aside class="contact-list">
+		<h2>Mes contacts</h2>
+		<ul>
+			<li>John Doe</li>
+			<li>Babette Pola</li>
+		</ul>
+	</aside>
 
+	<main class="contact-card">
+		<h2>Fiche contact</h2>
+		<button id="add-contact">Nouveau</button>
+		<article>
+			<div>
+				<p>Prénom : John</p>
+				<p>Nom : Doe</p>
+				<p>Email : j.doe@email.com</p>
+			</div>
+			<button id="modify-contact">Modifier</button>
+			<button id="delate-contact">Supprimer</button>
+		</article>
+	</main>
 	
+
 	<script src="functions.js" type="text/javascript"></script>
 	<script src="contact.js" type="text/javascript"></script>
 	<script src="main.js" type="text/javascript"></script>

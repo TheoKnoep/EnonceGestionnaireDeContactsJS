@@ -1,3 +1,14 @@
 * {
 	font-family: 'Lato', sans-serif; 
 }
+body {
+	background-color: $main-color; 
+}
+.header {
+	background-color: $main-color; 
+	color: $third-color; 
+}
+
+.contact-list, .contact-card {
+	background-color: $third-color; 
+}

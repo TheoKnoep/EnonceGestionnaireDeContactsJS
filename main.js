@@ -39,7 +39,7 @@ for (let i in tableContacts) {
 let manager = new ContactsManager(); 
 
 //on appelle le menu du manager : 
-manager.displayMenu(); 
+// manager.displayMenu(); 
 
 
 

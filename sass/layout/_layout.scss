@@ -1,5 +1,20 @@
-.contacts-container {
+body {
+	display: grid; 
+	grid-template-columns: 50% 50%; 
+	grid-template-rows: $header-height calc(100vh - #{$header-height}); 
+	grid-template-areas: 
+		"header header"
+		"contact-list contact-card";
+}
+
+.header {
+	grid-area: header;
 	display: flex; 
-	flex-wrap: wrap;
-	justify-content: center; 
+	align-items: center; 
+}
+.contact-list {
+	grid-area: contact-list;
+}
+.contact-card {
+	grid-area: contact-card; 
 }
